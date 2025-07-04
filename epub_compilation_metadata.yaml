@@ -1,0 +1,460 @@
+# ------------------------------------------------------------
+# EPUB-3 Compilation Metadata – Curls & Contemplation
+# ------------------------------------------------------------
+title: "Curls & Contemplation: A Stylist's Interactive Journey Journal"
+author: "MD Warren"
+language: "en-US"
+
+identifier:
+    scheme: UUID
+    text: "urn:uuid:9fa5e2ef-5fd8-4f5b-9077-0b9e856cda3d"
+
+epub_version: 3
+date: "2025-05-27"
+rights: "© 2025 MD Warren. All rights reserved."
+publisher: "MD Warren"
+
+description: >
+    An interactive journey of creative mastery, business growth, and self-reflection
+    for stylists, blending artistry, entrepreneurship, and personal development.
+
+subject:
+    - Nonfiction
+    - Beauty
+    - Business
+    - Personal Development
+
+css:
+    - OEBPS/fonts.css
+    - OEBPS/style.css
+
+embedded_fonts:
+    - OEBPS/fonts/librebaskerville-bold.woff2
+    - OEBPS/fonts/librebaskerville-italic.woff2
+    - OEBPS/fonts/librebaskerville-regular.woff2
+    - OEBPS/fonts/Montserrat-Bold.woff2
+    - OEBPS/fonts/Montserrat-Regular.woff2
+    - OEBPS/fonts/CinzelDecorative.woff2
+
+toc: true
+toc_depth: 2
+
+# ------------------------------------------------------------
+# XHTML template set in use
+# ------------------------------------------------------------
+templates:
+    front_matter:
+        title_page: title_page_template.xhtml # Artifact #13
+        copyright: copyright_template.xhtml # Artifact #7
+        table_of_contents: table_of_contents_template.xhtml # Artifact #8
+        dedication: dedication_template.xhtml # Artifact #11
+        self_assessment: self_assessment_template.xhtml # Artifact #9
+        affirmation_odyssey: affirmation_odyssey_template.xhtml # Artifact #10
+        preface: preface_template.xhtml # Artifact #12
+
+    chapters:
+        title_page: chapter_title_template.xhtml # Artifact #1
+        content: chapter_content_template.xhtml # Artifact #2
+        quiz: quiz_template.xhtml # Artifact #3
+        worksheet_form: worksheet_template_1.xhtml # Artifact #4
+        worksheet_activity: worksheet_template_2.xhtml # Artifact #5
+        closing_page: chapter_last_page_template.xhtml # Artifact #6
+
+    back_matter:
+        quiz_key: quiz_key_template.xhtml # Artifact #14
+        about_author: about_author_template.xhtml # Artifact #15
+        acknowledgments: acknowledgments_template.xhtml # Artifact #16
+        journal_worksheet: journal_worksheet_template.xhtml # Artifact #17
+        smart_goals: smart_goals_template.xhtml # Artifact #18
+
+# ------------------------------------------------------------
+# Full ordered spine (already in reading order)
+# ------------------------------------------------------------
+input_files:
+    - OEBPS/1TitlePage.xhtml
+    - OEBPS/2Copyright.xhtml
+    - OEBPS/3TableOfContents.xhtml
+    - OEBPS/4Dedication.xhtml
+    - OEBPS/5SelfAssessment.xhtml
+    - OEBPS/6AffirmationOdyssey.xhtml
+    - OEBPS/7Preface.xhtml
+    - OEBPS/8-Part-I-Foundations-of-Creative-Hairstyling.xhtml
+    - OEBPS/9-Chapter-I-Unveiling-Your-Creative-Odyssey.xhtml
+    - OEBPS/10-Chapter-II-Refining-Your-Creative-Toolkit.xhtml
+    - OEBPS/11-Chapter-III-Reigniting-Your-Creative-Fire.xhtml
+    - OEBPS/12-Part-II-Building-Your-Professional-Practice.xhtml
+    - OEBPS/13-Chapter-IV-The-Art-of-Networking-in-Freelance-Hairstyling.xhtml
+    - OEBPS/14-Chapter-V-Cultivating-Creative-Excellence-Through-Mentorship.xhtml
+    - OEBPS/15-Chapter-VI-Mastering-the-Business-of-Hairstyling.xhtml
+    - OEBPS/16-Chapter-VII-Embracing-Wellness-and-Self-Care.xhtml
+    - OEBPS/17-Chapter-VIII-Advancing-Skills-Through-Continuous-Education.xhtml
+    - OEBPS/18-Part-III-Advanced-Business-Strategies.xhtml
+    - OEBPS/19-Chapter-IX-Stepping-Into-Leadership.xhtml
+    - OEBPS/20-Chapter-X-Crafting-Enduring-Legacies.xhtml
+    - OEBPS/21-Chapter-XI-Advanced-Digital-Strategies-for-Freelance-Hairstylists.xhtml
+    - OEBPS/22-Chapter-XII-Financial-Wisdom-Building-Sustainable-Ventures.xhtml
+    - OEBPS/23-Chapter-XIII-Embracing-Ethics-and-Sustainability-in-Hairstyling.xhtml
+    - OEBPS/24-Part-IV-Future-Focused-Growth.xhtml
+    - OEBPS/25-Chapter-XIV-The-Impact-of-AI-on-the-Beauty-Industry.xhtml
+    - OEBPS/26-Chapter-XV-Cultivating-Resilience-and-Well-Being-in-Hairstyling.xhtml
+    - OEBPS/27-Chapter-XVI-Tresses-and-Textures-Embracing-Diversity-in-Hairstyling.xhtml
+    - OEBPS/28Conclusion.xhtml
+    - OEBPS/29QuizKey.xhtml
+    - OEBPS/30SelfAssessment.xhtml
+    - OEBPS/31AffirmationsClose.xhtml
+    - OEBPS/32ContinuedLearningCommitment.xhtml
+    - OEBPS/33Acknowledgments.xhtml
+    - OEBPS/34AbouttheAuthor.xhtml
+    - OEBPS/35CurlsContempCollective.xhtml
+    - OEBPS/36JournalingStart.xhtml
+    - OEBPS/37ManifestingJournal.xhtml
+    - OEBPS/38JournalPage.xhtml
+    - OEBPS/39ProfessionalDevelopment.xhtml
+    - OEBPS/40SMARTGoals.xhtml
+    - OEBPS/41SelfCareJournal.xhtml
+    - OEBPS/42VisionJournal.xhtml
+    - OEBPS/43DoodlePage.xhtml
+    - OEBPS/44-bibliography.xhtml
+
+# ------------------------------------------------------------
+# Chapter-level metadata (16 total)
+# ------------------------------------------------------------
+chapters:
+    - id: chapter-i
+      num: I
+      title: "Unveiling Your Creative Odyssey"
+      bible_quote: >
+          For we are God's handiwork, created in Christ Jesus to do good works,
+          which God prepared in advance for us to do. — Ephesians 2:10
+      image:
+          src: ../images/Chapter-I-quote.PNG
+          alt: >
+              "I'm always doing things in a metaphorical way… I wanted to get across
+              the idea of hair in motion to represent change—getting out of dark
+              times and leaving uncertainty behind." — Jawara W
+      description: >
+          Discover conscious hairstyling: Transform client lives and unveil your
+          unique creative odyssey, infusing deeper meaning and purpose into every
+          style.
+      keywords:
+          - conscious hairstyling
+          - creative fulfillment hairstylist
+          - purposeful artistry
+          - client empowerment hair
+
+    - id: chapter-ii
+      num: II
+      title: "Refining Your Creative Toolkit"
+      bible_quote: >
+          Do you see someone skilled in their work? They will serve before kings;
+          they will not serve before officials of low rank. — Proverbs 22:29
+      image:
+          src: ../images/Chapter-II-quote.PNG
+          alt: >
+              "Simply love what you do and the rest will shine through… educating
+              myself daily on new trends and techniques is my passion." — Kendall Dorsey
+      description: >
+          Elevate your artistry: Invest in your professional toolkit and master
+          foundational techniques for precision, boundless creativity, and flawless
+          results.
+      keywords:
+          - professional hairstylist tools
+          - master hair techniques
+          - precision cutting skills
+          - quality styling equipment
+
+    - id: chapter-iii
+      num: III
+      title: "Reigniting Your Creative Fire"
+      bible_quote: >
+          For this reason I remind you to fan into flame the gift of God, which is
+          in you through the laying on of my hands. — 2 Timothy 1:6
+      image:
+          src: ../images/Chapter-III-quote.PNG
+          alt: >
+              "To master hairstyling, weave your skills with threads of passion,
+              professionalism, and personal growth." — Michael David
+      description: >
+          Reignite your creative fire: Rediscover your "why" and embrace a growth
+          mindset to conquer burnout and sustain your passion for hairstyling.
+      keywords:
+          - overcome hairstylist burnout
+          - rekindle styling passion
+          - growth mindset beauty pro
+          - creative inspiration hair
+
+    - id: chapter-iv
+      num: IV
+      title: "The Art of Networking in Freelance Hairstyling"
+      bible_quote: >
+          Two are better than one because they have a good return for their labor.
+          For if either of them falls, the one will lift up his companion.
+          — Ecclesiastes 4:9-10
+      image:
+          src: ../images/Chapter-IV-quote.PNG
+          alt: >
+              "Cultivate a career that grows with you, rooted in passion, watered by
+              perseverance, and blossomed through bravery." — Michael David
+      description: >
+          Master freelance networking: Forge vital connections and expand your
+          influence to unlock new opportunities and build a thriving hairstylist
+          career.
+      keywords:
+          - freelance hairstylist networking
+          - hair industry connections
+          - build stylist referrals
+          - social media for stylists
+
+    - id: chapter-v
+      num: V
+      title: "Cultivating Creative Excellence Through Mentorship"
+      bible_quote: >
+          As iron sharpens iron, so one person sharpens another. — Proverbs 27:17
+      image:
+          src: ../images/Chapter-V-quote.PNG
+          alt: >
+              "I think people just need to be a lot more knowledgeable on hair
+              types… there's no white or black hair, only different types and
+              textures." — Ursula Stephen
+      description: >
+          Accelerate your growth: Cultivate creative excellence by strategically
+          finding mentors and building powerful relationships for career
+          advancement.
+      keywords:
+          - hairstylist mentorship
+          - accelerate stylist growth
+          - hair career guidance
+          - mentorship benefits beauty
+
+    - id: chapter-vi
+      num: VI
+      title: "Mastering the Business of Hairstyling"
+      bible_quote: >
+          Whatever you do, work at it with all your heart, as working for the Lord,
+          not for human masters. — Colossians 3:23
+      image:
+          src: ../images/Chapter-VI-quote.PNG
+          alt: >
+              "Building a thriving business in hairstyling isn't just about shaping
+              hair; it's about reshaping lives, starting with your own." — Michael David
+      description: >
+          Master hairstyling business: Develop keen business acumen, from client
+          loyalty to financial planning, ensuring your creative talent thrives
+          profitably.
+      keywords:
+          - hairstylist business skills
+          - salon financial goals
+          - hair client loyalty
+          - market hairstyling brand
+
+    - id: chapter-vii
+      num: VII
+      title: "Embracing Wellness and Self-Care"
+      bible_quote: >
+          Do you not know that your bodies are temples of the Holy Spirit… You are
+          not your own; you were bought at a price. — 1 Corinthians 6:19-20
+      image:
+          src: ../images/Chapter-VII-quote.PNG
+          alt: >
+              "Every hairstyle tells a story, and every business decision writes a
+              chapter in your book of professional success." — Michael David
+      description: >
+          Embrace holistic wellness: Prioritize self-care with ergonomic practices
+          and mindfulness to sustain your energy and passion in the demanding hair
+          industry.
+      keywords:
+          - hairstylist self-care
+          - beauty professional wellness
+          - prevent stylist burnout
+          - ergonomics for hairstylists
+
+    - id: chapter-viii
+      num: VIII
+      title: "Advancing Skills Through Continuous Education"
+      bible_quote: >
+          Let the wise listen and add to their learning, and let the discerning get
+          guidance. — Proverbs 1:5
+      image:
+          src: ../images/Chapter-VIII-quote.PNG
+          alt: >
+              "Balance in the beauty industry isn't found, it's created through a
+              symphony of service, skill, and self-care." — Michael David
+      description: >
+          Advance your styling skills: Commit to continuous education to stay
+          competitive, master new techniques, and remain inspired in the evolving
+          beauty world.
+      keywords:
+          - hairstylist continuing education
+          - advanced hair skills
+          - beauty industry trends
+          - online hair courses
+
+    - id: chapter-ix
+      num: IX
+      title: "Stepping Into Leadership"
+      bible_quote: >
+          And David shepherded them with integrity of heart; with skillful hands he
+          led them. — Psalm 78:72
+      image:
+          src: ../images/Chapter-IX-quote.PNG
+          alt: >
+              "Lead with your heart, guide with your hands, and follow with your
+              soul—this is the path to impactful artistry." — Michael David
+      description: >
+          Step into leadership: Cultivate your influence as a freelance
+          hairstylist, mentor others, and expand your professional impact beyond
+          the chair.
+      keywords:
+          - hairstylist leadership
+          - freelance leadership beauty
+          - influence in hairstyling
+          - mentor upcoming stylists
+
+    - id: chapter-x
+      num: X
+      title: "Crafting Enduring Legacies"
+      bible_quote: >
+          But the fruit of the Spirit is love, joy, peace, forbearance, kindness,
+          goodness, faithfulness, gentleness, and self-control. Against such things
+          there is no law. — Galatians 5:22-23
+      image:
+          src: ../images/Chapter-X-quote.PNG
+          alt: >
+              "Thrive in the beauty industry by cultivating not just client
+              relationships, but a community of creativity and care." — Michael David
+      description: >
+          Craft your enduring legacy: Build a sustainable, impactful career by
+          focusing on long-term well-being, client impact, and conscious
+          hairstyling.
+      keywords:
+          - hairstylist legacy
+          - long-term stylist success
+          - sustainable hair career
+          - mindful hairstyling practice
+
+    - id: chapter-xi
+      num: XI
+      title: "Advanced Digital Strategies for Freelance Hairstylists"
+      bible_quote: >
+          A good name is more desirable than great riches; to be esteemed is better
+          than silver or gold. — Proverbs 22:1
+      image:
+          src: ../images/Chapter-XI-quote.PNG
+          alt: >
+              "Inclusivity in hairstyling isn't just about the textures you tame but
+              the hearts you touch and the minds you open." — Michael David
+      description: >
+          Amplify your reach: Implement advanced digital strategies to build your
+          freelance brand online, attract ideal clients, and grow your business.
+      keywords:
+          - digital marketing hairstylist
+          - online hairstylist brand
+          - social media for hair clients
+          - e-commerce stylist
+
+    - id: chapter-xii
+      num: XII
+      title: "Financial Wisdom — Building Sustainable Ventures"
+      bible_quote: >
+          A friend loves at all times, and a brother is born for a time of
+          adversity. — Proverbs 17:17
+      image:
+          src: ../images/Chapter-XII-quote.PNG
+          alt: >
+              "Entrepreneurship in hairstyling is the art of turning strands into
+              standards and cuts into cultures." — Michael David
+      description: >
+          Build sustainable ventures: Cultivate financial wisdom with smart pricing
+          and cash-flow mastery for a resilient and profitable freelance hairstyling
+          career.
+      keywords:
+          - hairstylist financial planning
+          - profitable salon business
+          - freelance hair income
+          - recession-proof stylist
+
+    - id: chapter-xiii
+      num: XIII
+      title: "Embracing Ethics and Sustainability in Hairstyling"
+      bible_quote: >
+          The earth is the Lord's, and everything in it, the world, and all who
+          live in it. — Psalm 24:1
+      image:
+          src: ../images/Chapter-XIII-quote.PNG
+          alt: >
+              "Your hands mold more than hair—they mold aspirations, turning the salon
+              chair into a seat of transformation." — Michael David
+      description: >
+          Embrace sustainable hairstyling: Integrate ethical, eco-friendly practices
+          into your salon to attract conscious clients and protect our planet.
+      keywords:
+          - sustainable hairstyling
+          - eco-friendly salon
+          - ethical beauty practices
+          - green hairstylist products
+
+    - id: chapter-xiv
+      num: XIV
+      title: "The Impact of AI on the Beauty Industry"
+      bible_quote: >
+          Do nothing out of selfish ambition or vain conceit. Rather, in humility
+          value others above yourselves, not looking to your own interests but each
+          of you to the interests of the others. — Philippians 2:3-4
+      image:
+          src: ../images/Chapter-XIV-quote.PNG
+          alt: >
+              "Let each stroke of your brush not only paint beauty but also stroke the
+              fires of your entrepreneurial spirit." — Michael David
+      description: >
+          Navigate AI in beauty: Understand how Artificial Intelligence is shaping
+          hairstyling and leverage its tools while honing your unique human
+          artistry.
+      keywords:
+          - ai in beauty industry
+          - hairstylist technology
+          - future of hairstyling
+          - ai hair tools
+
+    - id: chapter-xv
+      num: XV
+      title: "Cultivating Resilience and Well-Being in Hairstyling"
+      bible_quote: >
+          Consider it pure joy, my brothers and sisters, whenever you face trials of
+          many kinds, because you know that the testing of your faith produces
+          perseverance. — James 1:2-3
+      image:
+          src: ../images/Chapter-XV-quote.PNG
+          alt: >
+              "Your craft is your voice—let it speak of innovation, echo with
+              integrity, and sing with sincerity." — Michael David
+      description: >
+          Cultivate deep resilience: Fortify your mental well-being and manage
+          industry stressors with proven strategies for a balanced and fulfilling
+          career.
+      keywords:
+          - hairstylist resilience
+          - mental wellness beauty pro
+          - work-life balance stylist
+          - stress management hair
+
+    - id: chapter-xvi
+      num: XVI
+      title: "Tresses and Textures — Embracing Diversity in Hairstyling"
+      bible_quote: >
+          There is neither Jew nor Gentile, neither slave nor free, nor is there
+          male and female, for you are all one in Christ Jesus. — Galatians 3:28
+      image:
+          src: ../images/Chapter-XVI-quote.PNG
+          alt: >
+              "Within each curl lies a story, waiting to be unfurled by the artistry
+              of hands; for every snip shapes not just hair, but the path to
+              self-discovery." — Michael David
+      description: >
+          Embrace hair diversity: Master techniques for all tresses and textures,
+          fostering an inclusive practice that celebrates every client's unique
+          beauty.
+      keywords:
+          - diverse hair textures
+          - inclusive hairstyling
+          - cultural competency beauty
+          - textured hair care education

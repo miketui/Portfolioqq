@@ -1,0 +1,297 @@
+<artifact type="application/vnd.ant.code" language="css">
+/*
+ * style.css — EPUB & Print Layout
+ * Optimized for accessibility, valid output, and EPUB compatibility
+ */
+
+/* Import fonts stylesheet */
+@import url('fonts.css');
+
+/* ====== CSS CUSTOM PROPERTIES ====== */
+:root {
+  --primary-color: #1a1a1a;
+  --secondary-color: #333;
+  --accent-color: #1797a6; /* Teal for chapters and highlights */
+  --border-color: #b2dfdb; /* Soft teal border */
+  --background-light: #f9f9f9;
+  --chapter-teal-gradient: linear-gradient(to right, transparent, #1797a6, transparent);
+  --shadow-light: 0 1px 3px rgba(23,151,166,0.07);
+  --shadow-medium: 0 2px 4px rgba(23,151,166,0.15);
+}
+
+/* ====== GLOBAL RESET & BASE STYLES ====== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html { font-size: 100%; }
+
+body {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  font-weight: normal; font-style: normal; line-height: 1.6;
+  color: var(--primary-color); background-color: #fff;
+  margin: 0 auto; padding: 1.5em; text-align: left;
+  orphans: 2; widows: 2;
+  max-width: 35em;
+}
+
+/* ====== PAGE BREAKS & SINGLE PAGE CONTROL ====== */
+.page-break { 
+  page-break-before: always; 
+  break-before: page;
+  display: block; 
+  height: 0; 
+}
+
+h1, h2, h3, h4, h5, h6 { 
+  page-break-after: avoid;
+  break-after: avoid;
+  margin: 1em 0 0.8em 0; 
+  line-height: 1.2;
+  font-family: 'Cinzel Decorative', 'Times New Roman', serif;
+  color: var(--primary-color); 
+  font-weight: normal; 
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.1em;
+  margin: 1.5em 0 1em 0;
+  text-transform: uppercase;
+  letter-spacing: 0.11em;
+}
+h2 { font-size: 1.45em; margin: 1.2em 0 0.8em 0; }
+h3 { font-size: 1.2em; margin: 1em 0 0.6em 0; }
+
+/* ====== ACCESSIBILITY ====== */
+.sr-only {
+  position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+  overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
+}
+
+/* ====== FOCUS STATES FOR ACCESSIBILITY ====== */
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 2px;
+}
+
+/* ====== TYPOGRAPHY ====== */
+p {
+  margin: 0 0 0.8em 0; text-indent: 1.2em; text-align: justify;
+}
+p.first, p.first-paragraph, .no-indent, .introduction, .centered { text-indent: 0; }
+.centered { text-align: center; }
+
+/* Links */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+/* Lists */
+ul, ol {
+  margin: 0 0 1em 1.5em;
+  padding: 0;
+}
+li {
+  margin-bottom: 0.5em;
+}
+
+/* ====== DROPCAP ====== */
+.dropcap {
+  float: left; 
+  font-size: 3em; 
+  line-height: 0.95;
+  margin: 0.10em 0.18em 0 0;
+  font-weight: bold; 
+  color: var(--accent-color);
+  font-family: 'Cinzel Decorative', 'Times New Roman', serif;
+  background: #e0f7fa;
+  padding: 0.13em 0.21em 0.05em 0.17em;
+  border-radius: 0.4em;
+  box-shadow: 0 1px 5px rgba(23,151,166,0.10);
+}
+
+/* ====== CHAPTER TITLE PAGE STYLES ====== */
+.chapter-title-container {
+  text-align: left;
+  margin: 1em 0;
+}
+.chapter-title-word {
+  font-family: 'Cinzel Decorative', 'Times New Roman', serif;
+  font-size: 1.8em;
+  color: var(--accent-color);
+  line-height: 1.2;
+  display: block;
+}
+.chapter-number {
+  font-size: 3.5em; 
+  color: var(--accent-color);
+  font-family: 'Cinzel Decorative', 'Times New Roman', serif; 
+  font-weight: bold;
+  margin-bottom: 0.3em; 
+  letter-spacing: 0.08em;
+  text-align: center;
+}
+.bible-quote-container {
+  background: #e0f2f1;
+  border: 2px solid var(--accent-color);
+  border-radius: 1em;
+  box-shadow: var(--shadow-light);
+  padding: 1.2em 2em;
+  margin: 2em auto;
+  max-width: 90%;
+  text-align: center;
+}
+.introduction-heading {
+  font-family: 'Libre Baskerville', Georgia, 'Times New Roman', serif;
+  font-size: 1.25em;
+  color: var(--primary-color);
+  text-align: center;
+  margin-top: 1.5em;
+  letter-spacing: 0.03em;
+}
+
+/* ====== DECORATIVE ELEMENTS ====== */
+.decorative-top-accent {
+  width: 60px; 
+  height: 6px; 
+  background: linear-gradient(to right, #1797a6 40%, #f6f5f2);
+  border-radius: 2px;
+  margin: 1.5rem auto 1rem auto;
+}
+.decorative-line {
+  border: 0; 
+  border-top: 2px solid var(--accent-color); 
+  width: 100px; 
+  max-width: 30vw; 
+  margin: 0 auto 1.5em auto;
+}
+
+/* ====== BLOCKQUOTES ====== */
+blockquote {
+  margin: 1.5em 0;
+  padding: 1em 1.5em;
+  border-left: 4px solid var(--accent-color);
+  background-color: #f5f5f5;
+  font-style: italic;
+  position: relative;
+}
+blockquote p:last-child {
+  margin-bottom: 0;
+}
+
+/* ====== TABLE STYLING ====== */
+table {
+  width: 100%; 
+  border-collapse: collapse; 
+  margin: 1.1em 0;
+}
+th, td {
+  padding: 0.6em;
+  border: 1.5px solid var(--border-color);
+  text-align: left;
+}
+th { 
+  background-color: var(--background-light); 
+  font-weight: bold; 
+}
+
+/* ====== WORKSHEET / QUIZ STYLING ====== */
+.worksheet-table {
+  width: 100%;
+  margin: 1em 0;
+  border-collapse: collapse;
+}
+.worksheet-table th, 
+.worksheet-table td {
+  border: 1px solid var(--border-color);
+  padding: 0.5em;
+}
+.quiz-container {
+  margin: 2em 0;
+}
+.quiz-question {
+  margin-bottom: 1.5em;
+}
+.quiz-options {
+  margin-left: 1.5em;
+}
+.quiz-option {
+  margin: 0.5em 0;
+}
+
+/* ====== IMAGE CONTAINERS ====== */
+.image-container {
+  text-align: center;
+  margin: 1.5em 0;
+}
+.chapter-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: var(--shadow-medium);
+}
+.chapter-image-link {
+  display: inline-block;
+  text-decoration: none;
+}
+
+/* ====== RESPONSIVE ADJUSTMENTS ====== */
+@media screen and (max-width: 600px) {
+  body { 
+    font-size: 0.93em; 
+    padding: 1em 0.6em; 
+    max-width: 100%; 
+  }
+  .chapter-title-word { 
+    font-size: 1.38em; 
+  }
+  .chapter-number { 
+    font-size: 2em; 
+  }
+  .bible-quote-container { 
+    font-size: 1em; 
+    padding: 1em; 
+  }
+  .introduction-heading { 
+    font-size: 1em; 
+  }
+  blockquote {
+    padding: 0.8em 1em;
+    margin: 1.2em 0;
+  }
+}
+
+/* ====== PRINT STYLES ====== */
+@media print {
+  body { 
+    font-size: 10pt; 
+    line-height: 1.4; 
+    background: #fff !important; 
+    color: #000 !important; 
+  }
+  .dropcap, 
+  .worksheet-section, 
+  blockquote { 
+    background: none !important; 
+    box-shadow: none !important; 
+    border-color: #000 !important; 
+    color: #000 !important; 
+  }
+  a {
+    color: #000 !important;
+    text-decoration: none !important;
+  }
+  .chapter-title-word, 
+  .chapter-number { 
+    color: #000 !important; 
+  }
+  .bible-quote-container { 
+    background: none !important; 
+    border-color: #000 !important; 
+    color: #000 !important; 
+  }
+}
+</artifact>
